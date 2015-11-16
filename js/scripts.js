@@ -235,6 +235,8 @@ $(document).ready(function() {
 // });
 var showArrowInterval;
 
+getRightArrow(bodyWidth);
+
 	// if(bodyWidth < 768 && bodyWidth > 480) {
 	// 	$(".howmakeorder-arrow-right:odd").css({"display":"none"});
 	// } else {
@@ -247,11 +249,6 @@ $(window).resize(function() {
 
 	getRightArrow(bodyWidth);
 
-	if(bodyWidth < 768 && bodyWidth > 480) {
-		$(".howmakeorder-arrow-right:odd").css({"display":"none"});
-	} else {
-		$(".howmakeorder-arrow-right:odd").css({"display":"inline-block"});
-	}
 });
 
 
