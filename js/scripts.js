@@ -257,7 +257,7 @@ $(window).resize(function() {
 		
 		showArrowInterval = setTimeout(function() {
 
-			if(bodyWidth < 768 && bodyWidth > 480) {
+			if(bodyWidth <= 768 && bodyWidth >= 480) {
 
 				$(".howmakeorder-arrow-right:odd").css({"display":"none"});
 
