@@ -55,6 +55,15 @@
 
 	.how-make-order {
 		width: 43%;
+		padding: 0 5%;
+	}
+
+/*	.glyphicon-chevron-right:nth-child(odd) {
+		color: red;
+	}*/
+
+	.howmakeorder-arrow-right:nth-child(odd) {
+		display: "none";
 	}
 
 	.send-order-inpt {

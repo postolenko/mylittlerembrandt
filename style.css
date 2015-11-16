@@ -741,24 +741,26 @@ select::-ms-expand {
 	vertical-align: middle;
 	text-align: center;
 	margin: 0 auto;
-	padding: 45px 0 0 0;
+	padding: 20px 0 0 0;
 }
 
 .how-make-order {
 	display: inline-block;
-	vertical-align: middle;
-	width: 23.5%;
+	vertical-align: top;
+	width: 23%;
 	text-align: center;
+	margin: 25px 0 0 0;
 }
 
-.glyphicon-chevron-right {
+.howmakeorder-arrow-right {
 	display: inline-block;
 	vertical-align: top;
 	width: 2%;
+	margin: 25px 0 0 0;
 	color: #9db83e;
-	font-family: 'Glyphicons Halflings';
 	font-size: 27px;
 	line-height: 190px;
+	z-index: 3;
 }
 
 .glyphicon-chevron-right:after {
@@ -783,7 +785,6 @@ select::-ms-expand {
 	background-image: url(img/make_order_sprite.png);
 	background-size: 75%;
 	background-repeat: no-repeat;
-	background-position: 23px 10px;
 	position: relative;
 }
 
@@ -803,21 +804,25 @@ select::-ms-expand {
 .makephoto {
 	width: 128px;
 	height: 128px;
+	background-position: 23px 10px;
 }
 
 .downloadphoto {
 	width: 136px;
 	height: 136px;
+	background-position: 33px -159px
 }
 
 .confirmlayout {
 	width: 155px;
 	height: 155px;
+	background-position: 37px -360px;
 }
 
 .yourpresent {
 	width: 170px;
 	height: 170px;
+	background-position: 17px -619px;
 }
 
 .time-order {
@@ -1476,7 +1481,7 @@ select::-ms-expand {
 	background-image: url(img/social_icons_sprite.png);
 	/*background-position: 0px 0px;*/
 
-	-webkit-transition-property: background-position;
+/*	-webkit-transition-property: background-position;
     -webkit-transition-duration: 0.3s;
     -webkit-transition-timing-function: ease;
 
@@ -1494,7 +1499,7 @@ select::-ms-expand {
 
     transition-property: background-position;
     transition-duration: 0.3s;
-    transition-timing-function: ease;
+    transition-timing-function: ease;*/
 
 }
 
