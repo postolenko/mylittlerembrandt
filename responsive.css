@@ -62,9 +62,9 @@
 		color: red;
 	}*/
 
-	.howmakeorder-arrow-right:nth-child(odd) {
+/*	.howmakeorder-arrow-right:nth-child(odd) {
 		display: "none";
-	}
+	}*/
 
 	.send-order-inpt {
 		width: 70%;

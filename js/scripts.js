@@ -247,30 +247,30 @@ $(window).resize(function() {
 
 	getRightArrow(bodyWidth);
 
-	// if(bodyWidth <= 768 && bodyWidth >= 480) {
-	// 	$(".howmakeorder-arrow-right:odd").css({"display":"none"});
-	// } else {
-	// 	$(".howmakeorder-arrow-right").css({"display":"inline-block"});
-	// }
+	if(bodyWidth <= 768 && bodyWidth >= 480) {
+		$(".howmakeorder-arrow-right:odd").css({"display":"none"});
+	} else {
+		$(".howmakeorder-arrow-right").css({"display":"inline-block"});
+	}
 });
 
 
 
 	function getRightArrow(bodyWidth) {
 		
-		// showArrowInterval = setTimeout(function() {
+		showArrowInterval = setTimeout(function() {
 
-		// 	if(bodyWidth < 768 && bodyWidth > 480) {
+			if(bodyWidth < 768 && bodyWidth > 480) {
 
-		// 		$(".howmakeorder-arrow-right:odd").css({"display":"none"});
+				$(".howmakeorder-arrow-right:odd").css({"display":"none"});
 
-		// 	} else {
+			} else {
 
-		// 		$(".howmakeorder-arrow-right:odd").css({"display":"inline-block"});
+				$(".howmakeorder-arrow-right:odd").css({"display":"inline-block"});
 
-		// 	}
+			}
 
-		// }, 500);
+		}, 500);
 
 	}
 
