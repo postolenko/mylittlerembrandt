@@ -233,9 +233,9 @@ $(document).ready(function() {
 		 // });
 
 // });
-var showArrowInterval;
+// var showArrowInterval;
 
-getRightArrow(bodyWidth);
+// getRightArrow(bodyWidth);
 
 	// if(bodyWidth < 768 && bodyWidth > 480) {
 	// 	$(".howmakeorder-arrow-right:odd").css({"display":"none"});
@@ -243,21 +243,7 @@ getRightArrow(bodyWidth);
 	// 	$(".howmakeorder-arrow-right:odd").css({"display":"inline-block"});
 	// }
 
-$(window).resize(function() {
-
-	clearInterval(showArrowInterval);
-
-	getRightArrow(bodyWidth);
-
-});
-
-
-
-	function getRightArrow(bodyWidth) {
-		
-		showArrowInterval = setTimeout(function() {
-
-			if(bodyWidth <= 768 && bodyWidth >= 480) {
+	if(bodyWidth <= 768 && bodyWidth >= 480) {
 
 				$(".howmakeorder-arrow-right:odd").css({"display":"none"});
 
@@ -267,7 +253,41 @@ $(window).resize(function() {
 
 			}
 
-		}, 500);
+$(window).resize(function() {
+
+	// clearInterval(showArrowInterval);
+
+	// getRightArrow(bodyWidth);
+
+	if(bodyWidth <= 768 && bodyWidth >= 480) {
+
+				$(".howmakeorder-arrow-right:odd").css({"display":"none"});
+
+			} else {
+
+				$(".howmakeorder-arrow-right:odd").css({"display":"inline-block"});
+
+			}
+
+});
+
+
+
+	function getRightArrow(bodyWidth) {
+		
+		// showArrowInterval = setTimeout(function() {
+
+		// 	if(bodyWidth <= 768 && bodyWidth >= 480) {
+
+		// 		$(".howmakeorder-arrow-right:odd").css({"display":"none"});
+
+		// 	} else {
+
+		// 		$(".howmakeorder-arrow-right:odd").css({"display":"inline-block"});
+
+		// 	}
+
+		// }, 500);
 
 	}
 
