@@ -1,12 +1,238 @@
+@media only screen and (max-width: 960px) {
+
+	.row {
+		padding: 0 2%;
+	}
+
+	.present-type {
+		width: 50%;
+	}
+
+}
+
+
 @media only screen and (max-width: 768px) {
+
+	.headersite {
+		text-align: center;
+	}
+
+	.logo-box {
+		padding: 0 0px 0 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.logo-image {
+		margin: 0 auto;
+	}
+
+	.tel-contacts-top {
+		border: none;
+		margin: 20px 0;
+		padding: 0 5%;
+	}
+
+	.recommendation-img {
+		display: inline-block;
+		vertical-align: middle;
+		float: none;
+		margin: 20px 0;
+		padding: 0 5%;
+	}
+
+	.promo-form-contacts {
+		width: 70%;
+	}
+
+	.artcle-box {
+		width: 50%;
+	}
+
+	.present-type {
+		width: 50%;
+	}
+
+	.how-make-order {
+		width: 43%;
+	}
+
+	.send-order-inpt {
+		width: 70%;
+	}
+
+	.send-order-btn {
+		width: 70%;
+	}
+
+	.callback-form {
+		text-align: center;
+	}
+
+	.callback-description {
+		width: 70%;
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.callback-num {
+		width: 70%;
+	}
+
+	.callback-btn {
+		width: 70%;
+	}
+
+	footer {
+		text-align: center;
+	}
+
+	.footer-col {
+		width: 70%;
+		text-align: center;
+		/*margin: 0 auto;*/
+	}
+
+	.footer-contacts-col {
+	/*	display: block;
+		float: right;*/
+		/*width: 70%;*/
+	}
+
+	.footer-head {
+		font-size: 24px;
+		padding: 30px 0;
+	}
+
+	footer .details-list li {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.copy-text, .copy-link {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.politicks {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.footer-contacts a {
+		font-size: 24px;
+		line-height: 40px;
+	}
+
+	.footer-form-head {
+		font-size: 24px;
+		padding: 30px 0;
+	}
+
+	.questions-form-btn {
+		font-size: 24px;
+		line-height: 45px;
+		width: 100%;
+	}
+
+	.name-field, .email-field, .text-field {
+		font-size: 20px;
+	}
+
+}
+
+
+@media only screen and (max-width: 660px) {
+
+	.presents-types-box {
+		/*text-align: center;*/
+	}
+
+	.present-type {
+		width: 70%;
+
+	}
+
+	.present-type h3 {
+		font-size: 27px;
+		line-height: 37px;
+	}
+
+	.present-eskiz-product {
+		margin: 40px auto;
+	}
+
+	.exists-present {
+		font-size: 20px;
+		/*float: left;*/
+		padding: 0 30px;
+	}
+
+
+	.present-price {
+		text-align: left;
+	}
+
+	.product-description-item {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.upload-text {
+		margin: -20px auto 0 auto;
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	.chose_file {
+		display: block;
+		/*width: 100%;*/
+		margin: 30px auto;
+		/*text-align: center;*/
+	}
 
 
 
 }
 
-
 @media only screen and (max-width: 480px) {
 
+	.promo-form-contacts {
+		width: 100%;
+	}
+
+	.artcle-box {
+		width: 100%;
+	}
+
+	.how-make-order {
+		width: 100%;
+		margin: 30px 0 0 0;
+	}
+
+	.howmakeorder-arrow-right {
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		transform: rotate(90deg);
+		font-size: 40px;
+		line-height: 90px;
+	}
+
+	.send-order-inpt,
+	.send-order-btn {
+		width: 100%;
+	}
+
+	.callback-num,
+	.callback-btn {
+		width: 100%;
+		margin: 2% 0;
+	}
+
+	.footer-col {
+		width: 100%;
+	}
 
 }
 

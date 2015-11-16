@@ -43,16 +43,199 @@ $(document).ready(function() {
 
 	 	var indexChoiseFile = $(".chose_file").index(this);
 
-	 	// console.log(indexChoiseFile);
-
 	 	$(".chose_inpt:eq("+ indexChoiseFile +")").click();
 
-			// console.log(indexChoiseFile);
-
-            return(false);
+        return(false);
 
 	 });
 
+	var w = window,
+	d = document,
+	e = d.documentElement,
+	g = d.getElementsByTagName('body')[0],
+	bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+
+
+	 $(function() {
+
+	 	var marginVal = 0;
+	 	var marginModule = 1;
+
+	 	var countTestimonials = 1;
+
+	 	var  nextSlide;
+
+		if (bodyWidth <= 960) {
+			countTestimonials = 2;
+			// getSlider();
+		}
+
+		if(bodyWidth <= 480) {
+			countTestimonials = 1;
+			// getSlider();
+		}
+
+	 	$(window).resize(function() {
+
+	 		bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+	 		if (bodyWidth <= 960) {
+
+	 			countTestimonials = 2;
+
+	 		}
+
+	 		if(bodyWidth <= 480) {
+
+	 			countTestimonials = 1;
+
+	 		}
+
+	 		getSlider();
+
+	 	});
+
+	 	getSlider();
+
+
+	 	 	function getSlider() {
+
+	 	 		clearInterval(nextSlide);
+	 		
+	 		$(".testimonial").outerWidth($(".testimonials-slider").width() / countTestimonials);
+
+			$(".slider-box").width($(".testimonial").outerWidth() * ($(".testimonial").length) );
+
+
+
+		 // marginVal = parseInt($(".slider-box").css("margin-left"));
+
+		 nextSlide = setTimeout(function() {
+
+		 	$(".next").click();
+
+		 }, 5000);
+
+
+		 function testmonialSlide(){
+
+			 nextSlide = setTimeout(function() {
+
+			 	$(".next").click();
+			 	
+			 }, 5000);
+
+		 }
+
+
+
+		 $(".prew, .next").click(function() {
+
+		 		clearInterval(nextSlide);
+
+				marginVal = parseInt($(".slider-box").css("margin-left"));
+
+				// marginVal = $(".slider-box").css("margin-left");
+
+				marginModule = 1;
+
+				if( $(this).hasClass("next") && $(".slider-box").css("margin-left") != "0px") {
+
+					if(marginVal <= ( -1 * ( $(".slider-box").width() - ( $(".testimonial").outerWidth() * countTestimonials) ) ) ) {
+
+						$(".slider-box").stop().animate({"margin-left": 0 + "px" }, 300);
+
+						console.log("next" +"  "+marginVal +"  "+$(".slider-box").css("margin-left"));
+
+						// if($(".slider-box").css("margin-left") != "0px") {
+						// 	$(".slider-box").css({"margin-left": 0 + "px" });
+						// }
+						testmonialSlide();
+						return false;
+
+					}
+				 	
+					console.log("next" +"  "+marginVal);
+
+				}
+
+				if ($(this).hasClass("prew")) {
+
+					marginModule = -1;
+
+					if(marginVal >= 0) {
+
+						$(".slider-box").stop().animate({"margin-left": 0 + "px" }, 300);
+
+						console.log("next" +"  "+marginVal +"  "+$(".slider-box").css("margin-left"));
+
+						// if($(".slider-box").css("margin-left") != "0px") {
+						// 	$(".slider-box").css({"margin-left": 0 + "px" });
+						// }
+						testmonialSlide();
+						return false;
+
+					}
+					
+					console.log("prew"+"  "+marginVal);					
+
+				}
+
+				$(".slider-box").stop().animate({"margin-left": ( marginVal - ( $(".testimonial").outerWidth() * marginModule ) ) + "px" }, 300);
+			
+				testmonialSlide();
+
+			});
+	 	} 
+
+
+
+	 	});
+
+
+
+		 // $(".next").click(function() {
+
+		 // 	// marginVal = parseInt($(".slider-box").css("margin-left"));
+
+		 // 	$(".slider-box").animate({"margin-left": (marginVal - $(".testimonial").outerWidth() ) + "px" }, 300);
+			
+			// if(marginVal <= ( -1 * ( $(".slider-box").width() - ( $(".testimonial").outerWidth() * 3) ) ) ) {
+
+			// 	// marginVal = 0;
+
+			// 	$(".slider-box").stop().animate({"margin-left": 0 + "px" }, 300);
+
+			// 	return false;
+
+			// }
+
+		 // });
+
+		 // $(".prew").click(function() {
+
+		 // 	marginVal = parseInt($(".slider-box").css("margin-left"));	 	
+
+		 // 	$(".slider-box").animate({"margin-left": (marginVal + $(".testimonial").outerWidth() ) + "px" }, 300);
+
+
+			// if(marginVal >= 0 ) {
+
+			// 	// marginVal = 0;
+
+			// 	$(".slider-box").stop().animate({"margin-left": 0 + "px" }, 300);
+
+			// 	return false;
+
+			// }
+
+		 // });
+
+// });
+
+
+	
+
 
 });
-

@@ -66,9 +66,6 @@
 
 }
 
-
-
-
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('fonts/glyphicons-halflings-regular.eot');
@@ -221,7 +218,6 @@ select::-ms-expand {
 .logo-box {
 	display: inline-block;
 	vertical-align: middle;
-	/*width: 26%;*/
 	padding: 0 30px 0 0;
 }
 
@@ -242,7 +238,6 @@ select::-ms-expand {
 .tel-contacts-top {
 	display: inline-block;
 	vertical-align: middle;
-	/*width: 34%;*/
 	border-left: 1px solid #e4e4e4;
 }
 
@@ -260,7 +255,6 @@ select::-ms-expand {
 .recommendation {
 	display: inline-block;
 	vertical-align: middle;
-	/*width: 40%;*/
 }
 
 .recommendation-img {
@@ -319,7 +313,6 @@ select::-ms-expand {
 	font-family: 'OpenSans-Light', Arial, sans-serif;
 	font-size: 48px;
 	line-height: 55px;
-	/*font-weight: lighter;*/
 	text-align: center;
 	padding: 0 15px 0 0;
 }
@@ -496,7 +489,6 @@ select::-ms-expand {
 
 .presents {
 	background-image: url(img/designers_bg.jpg);
-	/*background-size: 100%;*/
 	background-repeat: repeat;
 	font-size: 0;
 	line-height: 0;
@@ -512,14 +504,14 @@ select::-ms-expand {
 }
 
 .presents-types-box {
-	padding: 60px 0 0 0;
+	padding: 20px 0 0 0;
 }
 
 .present-type {
 	display: inline-block;
 	vertical-align: top;
 	width: 25%;
-	padding: 0 1.5%;
+	padding: 5% 1.5%;
 }
 
 .present-type h3 {
@@ -543,10 +535,6 @@ select::-ms-expand {
 	display: block;
 	width: auto;
 	height: 210px;
-/*	background-image: url(img/presents_esliz_product.png);
-	background-size: 90%;
-	background-position: left top;
-	background-repeat: no-repeat;*/
 	margin: 45px 0 30px 0;
 }
 
@@ -570,9 +558,9 @@ select::-ms-expand {
 	padding: 15px 0 0 0;
 }
 
-
 .product-description {
 	padding: 15px 0 0 19px;
+	text-align: left;
 }
 
 .product-description-item {
@@ -597,7 +585,6 @@ select::-ms-expand {
     float: left;
     border: 1px solid transparent;
     background: transparent;
-    /*margin-bottom: 15px;*/
     margin: 40px 0 15px 0;
 }
 
@@ -605,7 +592,6 @@ select::-ms-expand {
     height: 20px;
     font-size: 13px;
     line-height: 13px;
-    /*padding-left: 18px;*/
     color: #ffffff;
     overflow: hidden;
 }
@@ -614,14 +600,11 @@ select::-ms-expand {
     display: none;
 }
 
-
-
 .test {
 	margin: 100px 0;
 	font-size: 13px;
 	line-height: 13px;
 }
-
 
 .chose_inpt {
 	opacity: .01;
@@ -635,18 +618,13 @@ select::-ms-expand {
 	margin: 40px 0 0 0;
 }
 
-
 .upload-text {
-/*	position: absolute;
-	top: 0;
-	left: 0;*/
 	float: left;
 	margin: -20px 0 0 0;
 	color: #b2d179;
 	font-family: 'OpenSans', Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
-	/*padding: 0 10px;*/
 }
 
 .upload-text:before {
@@ -756,54 +734,51 @@ select::-ms-expand {
 	font-size: 48px;
 	line-height: 55px;
 	text-align: center;
-	/*outline: 1px solid #ff0000;*/
 } 
 
 .how-make-order-box {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	text-align: center;
 	margin: 0 auto;
-	padding: 85px 0 0 0;
-	/*outline: 1px solid #ff0000;*/
+	padding: 45px 0 0 0;
 }
 
 .how-make-order {
 	display: inline-block;
-	vertical-align: top;
-	/*float: left;*/
+	vertical-align: middle;
 	width: 23.5%;
 	text-align: center;
-	/*outline: 1px solid #ff0000;*/
 }
-
 
 .glyphicon-chevron-right {
 	display: inline-block;
 	vertical-align: top;
-	/*display: block;*/
 	width: 2%;
-	/*float: left;*/
 	color: #9db83e;
 	font-family: 'Glyphicons Halflings';
 	font-size: 27px;
-	line-height: 128px;
-	/*outline: 1px solid #ff0000;*/
+	line-height: 190px;
 }
 
 .glyphicon-chevron-right:after {
 	content: "\e080";
 }
 
-.how-makeorder-img {
-	/*display: block;*/
+.how-makeorder-img-box {
 	display: inline-block;
-	vertical-align: middle;
-	width: 128px;
-	height: 128px;
-	margin: 0 auto;
-	/*margin: 0 50px 0 0;*/
+	vertical-align: top;
+	width: 100%;
+	height: 190px;
+	position: relative;
+} 
+
+.how-makeorder-img {
 	border: 4px solid #f7f7f7; 
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 	border-radius: 50%;
 	background-image: url(img/make_order_sprite.png);
 	background-size: 75%;
@@ -812,13 +787,44 @@ select::-ms-expand {
 	position: relative;
 }
 
+.makephoto,
+.downloadphoto,
+.confirmlayout,
+.yourpresent {	
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.makephoto {
+	width: 128px;
+	height: 128px;
+}
+
+.downloadphoto {
+	width: 136px;
+	height: 136px;
+}
+
+.confirmlayout {
+	width: 155px;
+	height: 155px;
+}
+
+.yourpresent {
+	width: 170px;
+	height: 170px;
+}
 
 .time-order {
 	color: #404040;
 	font-family: 'OpenSans-Light', Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
-	padding: 35px 0 0 0;
 }
 
 .time {
@@ -849,7 +855,6 @@ select::-ms-expand {
 
 .development-stages {
 	background-image: url(img/designers_bg.jpg);
-	/*background-size: 100%;*/
 	background-repeat: repeat;
 	font-size: 0;
 	line-height: 0;
@@ -890,7 +895,8 @@ select::-ms-expand {
 .testimonials {
 	font-size: 0;
 	line-height: 0;
-	padding: 80px 0; 
+	padding: 80px 0;
+	text-align: center;
 }
 
 .testimonials h2 {
@@ -901,7 +907,6 @@ select::-ms-expand {
 	font-size: 45px;
 	line-height: 55px;
 	text-align: center;
-	/*padding: 0 0 50px 0;*/
 }
 
 .testimonials h2 .text-bold {
@@ -909,17 +914,64 @@ select::-ms-expand {
 }
 
 .testimonials-slider {
-	width: 90%;
 	margin: 50px auto 0 auto;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+	width: 90%;
+}
+
+.slider-box {
+
+}
+
+.slide-dimensions {
+	display: inline-block;
+	vertical-align: middle;
+	/*float: left;*/
+	height: 50px;
+	cursor: pointer;
+	width: 5%;
+	color: #d5d5d5;
+	font-size: 45px;
+	line-height: 55px;
+}
+
+.prew {
+	text-align: left;
+}
+
+.next {
+	text-align: right;
+}
+
+.slide-dimensions:hover {
+	color: #e92d4c;
+}
+
+.glyphicon-chevron-left:before {
+  content: "\e079";
 }
 
 
 .testimonial {
-	display: inline-block;
-	vertical-align: top;
-	width: 33.33%;
-	padding: 0 2%;
+	/*display: inline-block;
+	vertical-align: top;*/
+	float: left;
+	/*width: 33.33%;*/
+	/*padding: 0 2%;*/
+	padding: 0 10px;
+	text-align: left;
 }
+
+/*.testimonial_h {
+	color: #404040;
+	font-family: 'OpenSans-Light', Arial, sans-serif;
+	font-size: 45px;
+	line-height: 55px;
+}*/
 
 .customer_photo {
 	display: block;
@@ -1011,14 +1063,13 @@ select::-ms-expand {
 	font-size: 36px;
 	line-height: 55px;
 	text-align: center;
-	/*padding: 0 0 50px 0;*/
 }
 
 .send-order-form {
 	font-size: 0;
 	line-height: 0;
 	text-align: center;
-	padding: 30px 0 0 0;
+	padding: 15px 0 0 0;
 }
 
 .send-order-inpt {
@@ -1026,6 +1077,7 @@ select::-ms-expand {
 	vertical-align: middle;
 	width: 30%;
 	margin: 0 1%;
+	margin: 1%;
 	color: #8b8b8b;
 	font-family: 'OpenSans', Arial, sans-serif;
 	font-size: 14px;
@@ -1048,7 +1100,7 @@ select::-ms-expand {
 	display: inline-block;
 	vertical-align: top;
 	width: 28%;
-	margin: 20px 0 0 0;
+	margin: 10px 0 0 0;
 	padding: 19px 18px;
 	border: 1px solid transparent;
 	-webkit-border-radius: 29px;
@@ -1131,7 +1183,7 @@ select::-ms-expand {
 	font-size: 0;
 	line-height: 0;
 	margin: 50px 0 40px 0;
-	padding: 40px 5%;
+	padding: 35px 5%;
 	background-image: url(img/send_order_bg.jpg);
 	background-repeat: repeat;
 	position: relative;
@@ -1159,6 +1211,7 @@ select::-ms-expand {
 	display: inline-block;
 	vertical-align: top;
 	width: 34%;
+	margin: 1% 0;
 	color: #ffffff;
 	font-family: 'OpenSans-Light', Arial, sans-serif;
 	font-size: 18px;
@@ -1170,7 +1223,8 @@ select::-ms-expand {
 	display: inline-block;
 	vertical-align: top;
 	width: 33%;
-	margin: 0 2%;
+	/*margin: 0 2%;*/
+	margin: 1% 2%;
 	color: #8b8b8b;
 	font-family: 'OpenSans', Arial, sans-serif;
 	font-size: 14px;
@@ -1194,6 +1248,7 @@ select::-ms-expand {
 	display: inline-block;
 	vertical-align: top;
 	width: 29%;
+	margin: 1% 0;
 	padding: 14px 18px;
 	border: 1px solid transparent;
 	-webkit-border-radius: 29px;
@@ -1287,13 +1342,14 @@ select::-ms-expand {
 	line-height: 0;
 	background-image: url(img/footer_bg.jpg);
 	background-repeat: repeat;
-	padding: 100px 0;
+	padding: 80px 0;
 }
 
 .footer-col {
 	display: inline-block;
 	vertical-align: top;
 	width: 33.33%;
+	padding: 20px 0;
 }
 
 .footer-head {
@@ -1302,10 +1358,6 @@ select::-ms-expand {
 	font-size: 13px;
 	line-height: 24px;
 	padding: 20px 0;
-}
-
-.details-list {
-	/*padding: 30px 0 0 0;*/
 }
 
 .details-list li {
@@ -1407,17 +1459,8 @@ select::-ms-expand {
 	margin: 0 7px 0 0;
 }
 
-/*
-.social-links-head {
-	color: #a9acb2;
-	font-family: 'OpenSans-Bold', Arial, sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-	padding: 20px 0;
-}*/
-
 .social-links-list {
-	/*padding: 20px 0 0 0;*/
+
 }
 
 .social-links-list li {
