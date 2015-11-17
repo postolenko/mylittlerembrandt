@@ -57,14 +57,14 @@
 @media only screen and (max-width: 768px) {
 	.bx-wrapper .bx-viewport {
 		width: 540px !important;
-		/*left: 0px;*/
+		left: 0px;
 	}
 }
 
 @media only screen and (max-width: 660px) {
 	.bx-wrapper .bx-viewport {
 		width: 270px !important;
-		/*left: 0px;*/
+		left: 0px;
 	}
 }
 
