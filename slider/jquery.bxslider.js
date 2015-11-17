@@ -1080,22 +1080,22 @@
 		 */
 		var resizeWindow = function(e){
 			// don't do anything if slider isn't initialized.
-			// if(!slider.initialized) return;
-			// // get the new window dimens (again, thank you IE)
-			// var windowWidthNew = $(window).width();
-			// var windowHeightNew = $(window).height();
-			// // make sure that it is a true window resize
-			// // *we must check this because our dinosaur friend IE fires a window resize event when certain DOM elements
-			// // are resized. Can you just die already?*
-			// if(windowWidth != windowWidthNew || windowHeight != windowHeightNew){
-			// 	// set the new window dimens
-			// 	windowWidth = windowWidthNew;
-			// 	windowHeight = windowHeightNew;
-			// 	// update all dynamic elements
-			// 	el.redrawSlider();
-			// 	// Call user resize handler
-			// 	slider.settings.onSliderResize.call(el, slider.active.index);
-			// }
+			if(!slider.initialized) return;
+			// get the new window dimens (again, thank you IE)
+			var windowWidthNew = $(window).width();
+			var windowHeightNew = $(window).height();
+			// make sure that it is a true window resize
+			// *we must check this because our dinosaur friend IE fires a window resize event when certain DOM elements
+			// are resized. Can you just die already?*
+			if(windowWidth != windowWidthNew || windowHeight != windowHeightNew){
+				// set the new window dimens
+				windowWidth = windowWidthNew;
+				windowHeight = windowHeightNew;
+				// update all dynamic elements
+				el.redrawSlider();
+				// Call user resize handler
+				slider.settings.onSliderResize.call(el, slider.active.index);
+			}
 		}
 
 		/**
