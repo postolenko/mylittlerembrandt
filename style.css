@@ -936,12 +936,13 @@ select::-ms-expand {
 .testimonials {
 	font-size: 0;
 	line-height: 0;
-	padding: 80px 0;
+	padding: 80px 0 45px 0;
 	text-align: center;
 }
 
 .testimonials_slider_box {
 	overflow: hidden;
+	padding: 0 0 35px 0;
 }
 
 .testimonials h2 {
