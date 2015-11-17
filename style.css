@@ -1449,39 +1449,24 @@ select::-ms-expand {
 	height: 27px;
 	margin: 0px 12px;
 	background-image: url(img/social_icons_sprite.png);
-	/*background-position: 0px 0px;*/
+	background-position-y: 0; 
 }
 
-
-
-/*.socila-link:hover {
-	background-position: 0px -54px;
-}*/
+.socila-link:hover {
+	background-position-y: -54px; 
+}
 
 .instagram {
-	background-position: 0px 0;
-}
-
-.instagram:hover {
-	background-position: 0px -54px;
+	background-position-x: 0px;
 }
 
 .facebook {
-	background-position: -50px 0;
-}
-
-.facebook:hover {
-	background-position: -50px -54px;
+	background-position-x: -50px;
 }
 
 .vk {
-	background-position: -97px 0;
+	background-position-x: -97px;
 }
-
-.vk:hover {
-	background-position: -97px -54px;
-}
-
 
 .footer-form-head {
 	color: #ffffff;
