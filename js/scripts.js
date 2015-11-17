@@ -55,6 +55,24 @@ $(document).ready(function() {
 
 	 });
 
+
+	 $(".prew-arrow").click(function() {
+
+	 	$(".bx-prev").click();
+
+	 	console.log(">>>>>");
+
+	 });
+
+
+	 $(".next-arrow").click(function() {
+
+	 	$(".bx-next").click();
+
+	 	console.log("<<<<<<");
+
+	 });
+
 	var w = window,
 	d = document,
 	e = d.documentElement,
