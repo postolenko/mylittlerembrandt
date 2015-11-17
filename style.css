@@ -4,57 +4,6 @@
 /*-- FONTS --*/
 /*------------------*/
 
-
-@font-face {
-  font-family: 'OpenSans-CondensedBold';
-  src: url('fonts/OpenSans-CondensedBold.eot?#iefix') format('embedded-opentype'),
-		  url('fonts/OpenSans-CondensedBold.woff') format('woff'),
-		  url('fonts/OpenSans-CondensedBold.ttf')  format('truetype'),
-		  url('fonts/OpenSans-CondensedBold.svg#OpenSans-CondensedBold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans-CondensedLight';
-  src: url('fonts/OpenSans-CondensedLight.eot?#iefix') format('embedded-opentype'),
-		  url('fonts/OpenSans-CondensedLight.woff') format('woff'),
-		  url('fonts/OpenSans-CondensedLight.ttf')  format('truetype'),
-		  url('fonts/OpenSans-CondensedLight.svg#OpenSans-CondensedLight') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans-Italic';
-  src: url('fonts/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
-		  url('fonts/OpenSans-Italic.woff') format('woff'),
-		  url('fonts/OpenSans-Italic.ttf')  format('truetype'),
-		  url('fonts/OpenSans-Italic.svg#OpenSans-Italic') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url('fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
-		  url('fonts/OpenSans.woff') format('woff'),
-		  url('fonts/OpenSans.ttf')  format('truetype'),
-		  url('fonts/OpenSans.svg#OpenSans') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans-Bold';
-  src: url('fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-		  url('fonts/OpenSans-Bold.woff') format('woff'),
-		  url('fonts/OpenSans-Bold.ttf')  format('truetype'),
-		  url('fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 @font-face {
     font-family: 'OpenSans-Light';
     src: url('fonts/OpenSans-Light.eot');
@@ -65,6 +14,38 @@
     font-style: normal;
 
 }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+		  url('fonts/OpenSans.woff') format('woff'),
+		  url('fonts/OpenSans.ttf')  format('truetype'),
+		  url('fonts/OpenSans.svg#OpenSans') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+		  url('fonts/OpenSans-Bold.woff') format('woff'),
+		  url('fonts/OpenSans-Bold.ttf')  format('truetype'),
+		  url('fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-CondensedBold';
+  src: url('fonts/OpenSans-CondensedBold.eot?#iefix') format('embedded-opentype'),
+		  url('fonts/OpenSans-CondensedBold.woff') format('woff'),
+		  url('fonts/OpenSans-CondensedBold.ttf')  format('truetype'),
+		  url('fonts/OpenSans-CondensedBold.svg#OpenSans-CondensedBold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 
 @font-face {
   font-family: 'Glyphicons Halflings';
@@ -159,7 +140,6 @@ h1, h2, h3, h4, h5, h6 {
 .row {
     max-width: 930px;
     margin: 0 auto;
-    /*padding: 0 1%;*/
 }
 
 .text-bold {
@@ -712,13 +692,13 @@ select::-ms-expand {
 	color: #ffffff;
 	font-family: 'OpenSans-CondensedBold', Arial, sans-serif;
 	font-size: 24px;
-	/*line-height: 21px;*/
-	line-height: 64px;
+	line-height: 34px;
 	text-align: center;
 	width: 100%;
 	margin: 20px 0;
-	padding: 0 18px;
-	border: 1px solid transparent;
+	padding: 15px 18px;
+	/*border: 1px solid transparent;*/
+	border: none;
 	-webkit-border-radius: 29px;
 	-moz-border-radius: 29px;
 	-ms-border-radius: 29px;
@@ -837,25 +817,29 @@ select::-ms-expand {
 .makephoto {
 	width: 128px;
 	height: 128px;
+	background-size: 75%;
 	background-position: 23px 10px;
 }
 
 .downloadphoto {
 	width: 136px;
 	height: 136px;
+	background-size: 75%;
 	background-position: 33px -159px
 }
 
 .confirmlayout {
 	width: 155px;
 	height: 155px;
-	background-position: 37px -360px;
+	background-size: 65%;
+	background-position: 44px -300px
 }
 
 .yourpresent {
 	width: 170px;
 	height: 170px;
-	background-position: 17px -619px;
+	background-size: 54%;
+	background-position: 37px -422px;
 }
 
 .time-order {
@@ -931,8 +915,6 @@ select::-ms-expand {
 /*-- Testimonials --*/
 
 
-
-
 .testimonials {
 	font-size: 0;
 	line-height: 0;
@@ -962,7 +944,6 @@ select::-ms-expand {
 .testimonials_slider {
 	padding: 50px 0 0 0;
 }
-
 
 .testimonial {
 	padding: 0 10px;
@@ -1011,7 +992,6 @@ select::-ms-expand {
 	font-family: 'OpenSans-Light', Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
-
 }
 
 .customer_name {
@@ -1098,7 +1078,8 @@ select::-ms-expand {
 	width: 28%;
 	margin: 10px 0 0 0;
 	padding: 19px 18px;
-	border: 1px solid transparent;
+	/*border: 1px solid transparent;*/
+	border: none;
 	-webkit-border-radius: 29px;
 	-moz-border-radius: 29px;
 	-ms-border-radius: 29px;
@@ -1129,7 +1110,6 @@ select::-ms-expand {
 	background: linear-gradient(to bottom,  rgba(187,39,63,1) 0%,rgba(244,47,79,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bb273f', endColorstr='#f42f4f',GradientType=0 );
 }
-
 
 
 /*-- Service --*/
@@ -1214,12 +1194,10 @@ select::-ms-expand {
 	line-height: 24px;
 }
 
-
 .callback-num {
 	display: inline-block;
 	vertical-align: top;
 	width: 33%;
-	/*margin: 0 2%;*/
 	margin: 1% 2%;
 	color: #8b8b8b;
 	font-family: 'OpenSans', Arial, sans-serif;
@@ -1234,7 +1212,6 @@ select::-ms-expand {
 	border-radius: 22px;
 }
 
-
 .callback-btn {
 	color: #ffffff;
 	font-family: 'OpenSans-CondensedBold', Arial, sans-serif;
@@ -1246,7 +1223,8 @@ select::-ms-expand {
 	width: 29%;
 	margin: 1% 0;
 	padding: 14px 18px;
-	border: 1px solid transparent;
+	/*border: 1px solid transparent;*/
+	border: none;
 	-webkit-border-radius: 29px;
 	-moz-border-radius: 29px;
 	-ms-border-radius: 29px;
@@ -1456,43 +1434,25 @@ select::-ms-expand {
 }
 
 .social-links-list {
-
+	margin: 0 0 0 -12px;
 }
 
 .social-links-list li {
 	display: inline-block;
 	vertical-align: top;
+	padding: 3px 0;
 }
 
 .socila-link {
 	display: block;
 	width: 36px;
 	height: 27px;
-	margin: 0 24px 0 0;
+	margin: 0px 12px;
 	background-image: url(img/social_icons_sprite.png);
 	/*background-position: 0px 0px;*/
-
-/*	-webkit-transition-property: background-position;
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: background-position;
-    -moz-transition-duration: 0.3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: background-position;
-    -ms-transition-duration: 0.3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: background-position;
-    -o-transition-duration: 0.3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: background-position;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;*/
-
 }
+
+
 
 /*.socila-link:hover {
 	background-position: 0px -54px;
@@ -1521,6 +1481,7 @@ select::-ms-expand {
 .vk:hover {
 	background-position: -97px -54px;
 }
+
 
 .footer-form-head {
 	color: #ffffff;
