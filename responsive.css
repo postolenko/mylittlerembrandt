@@ -13,6 +13,19 @@
 
 @media only screen and (max-width: 768px) {
 
+	h2,
+	.promo-box h2,
+	.designers h2,
+	.presents-images-head,
+	.make-order h2,
+	.development-stages h2,
+	.testimonials h2,
+	.service h2,
+	.service-head-bold {
+		font-size: 40px;
+		line-height: 48px;
+	}
+
 	.headersite {
 		text-align: center;
 	}
@@ -31,6 +44,10 @@
 		border: none;
 		margin: 20px 0;
 		padding: 0 5%;
+	}
+
+	.top-num-contacts {
+		padding: 0;
 	}
 
 	.recommendation-img {
@@ -158,8 +175,10 @@
 	}
 
 	.present-type {
-		width: 70%;
-
+		width: 90%;
+		margin: 0 auto;
+		display: block;
+		text-align: center;
 	}
 
 	.present-type h3 {
@@ -180,6 +199,7 @@
 
 	.present-price {
 		text-align: left;
+		padding: 10% 0 0 0;
 	}
 
 	.product-description-item {
@@ -188,7 +208,8 @@
 	}
 
 	.upload-text {
-		margin: -20px auto 0 auto;
+		float: none;
+		/*margin: -20px auto 0 auto;*/
 		font-size: 16px;
 		line-height: 18px;
 	}
@@ -205,6 +226,26 @@
 }
 
 @media only screen and (max-width: 480px) {
+
+	h2,
+	.promo-box h2,
+	.designers h2,
+	.presents-images-head,
+	.make-order h2,
+	.development-stages h2,
+	.testimonials h2,
+	.service h2,
+	.service-head-bold {
+		font-size: 33px;
+		line-height: 42px;
+	}
+
+	.tel-contacts-top,
+	.recommendation-img {
+		display: block;
+		margin: 0 auto;
+		padding: 8% 0;
+	}
 
 	.promo-form-contacts {
 		width: 100%;
@@ -230,7 +271,7 @@
 
 	.send-order-inpt,
 	.send-order-btn {
-		width: 100%;
+		width: 98%;
 	}
 
 	.callback-num,
@@ -239,13 +280,24 @@
 		margin: 2% 0;
 	}
 
+	.service-item {
+		width: 100%;
+	}
+
 	.footer-col {
 		width: 100%;
+	}
+
+	.mail a {
+		font-size: 20px;
 	}
 
 }
 
 @media only screen and (max-width: 320px) {
 
+	.present-type {
+		width: 100%;
+	}
 
 }
