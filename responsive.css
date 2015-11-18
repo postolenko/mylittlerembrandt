@@ -126,7 +126,6 @@
 	.footer-col {
 		width: 70%;
 		text-align: center;
-		/*margin: 0 auto;*/
 	}
 
 	.footer-head {
@@ -247,10 +246,15 @@
 	.logo-box {
 		display: inline-block;
 		vertical-align: middle;
+		width: 40%;
+	}
+
+	.contacts-recom-box {
+		width: 60%;
 	}
 
 	.logo-box-head {
-		display: none;
+		/*display: none;*/
 	}
 
 	.tel-contacts-top,
