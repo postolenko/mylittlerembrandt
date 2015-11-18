@@ -199,6 +199,7 @@ select::-ms-expand {
 	display: inline-block;
 	vertical-align: middle;
 	padding: 0 30px 0 0;
+	width: 30%;
 }
 
 .logo-image {
@@ -215,10 +216,18 @@ select::-ms-expand {
 	padding: 5px 0 0 10px;
 }
 
+.contacts-recom-box {
+	display: inline-block;
+	vertical-align: middle;
+	width: 70%;
+}
+
 .tel-contacts-top {
 	display: inline-block;
 	vertical-align: middle;
 	border-left: 1px solid #e4e4e4;
+	width: 60%;
+	text-align: left;
 }
 
 .top-num-contacts {
@@ -235,6 +244,8 @@ select::-ms-expand {
 .recommendation {
 	display: inline-block;
 	vertical-align: middle;
+	width: 40%;
+	text-align: right;
 }
 
 .recommendation-img {
@@ -1407,6 +1418,14 @@ select::-ms-expand {
 	font-family: 'OpenSans-Light', Arial, sans-serif;
 	font-size: 20px;
 	line-height: 24px;
+}
+
+.footer-contacts-col ul .responsive {
+	display: none;
+	color: #70747b;
+	font-family: 'OpenSans-Light', Arial, sans-serif;
+	font-size: 20px;
+	line-height: 27px;
 }
 
 .glyphicon-earphone:before {

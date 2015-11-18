@@ -28,34 +28,40 @@
 
 	.headersite {
 		text-align: center;
+		padding: 1% 0;
 	}
 
 	.logo-box {
 		padding: 0 0px 0 0;
-		width: 100%;
-		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
 	}
 
 	.logo-image {
-		margin: 0 auto;
+		width: 158px;
+		height: 72px;
+		margin: 0 auto;	
 	}
 
 	.tel-contacts-top {
 		border: none;
-		margin: 20px 0;
-		padding: 0 5%;
+		padding: 0 2%;
 	}
 
 	.top-num-contacts {
-		padding: 0;
+		font-size: 20px;
+		line-height: 24px;
 	}
 
 	.recommendation-img {
+		padding: 0 5%;
 		display: inline-block;
 		vertical-align: middle;
-		float: none;
-		margin: 20px 0;
-		padding: 0 5%;
+	}
+
+	.recommendation-img {
+		width: 100px;
+		height: 100px;
 	}
 
 	.promo-form-contacts {
@@ -113,41 +119,32 @@
 		text-align: center;
 	}
 
+	.footer-bg {
+		padding: 20px 0;
+	}
+
 	.footer-col {
 		width: 70%;
 		text-align: center;
 		/*margin: 0 auto;*/
 	}
 
-	.footer-contacts-col {
-	/*	display: block;
-		float: right;*/
-		/*width: 70%;*/
-	}
-
 	.footer-head {
 		font-size: 24px;
-		padding: 30px 0;
+		padding: 45px 0 30px 0;
 	}
 
-	footer .details-list li {
-		font-size: 20px;
-		line-height: 30px;
-	}
-
-	.copy-text, .copy-link {
-		font-size: 20px;
-		line-height: 30px;
-	}
-
-	.politicks {
-		font-size: 20px;
-		line-height: 30px;
+	.company-info {
+		display: none;
 	}
 
 	.footer-contacts a {
 		font-size: 24px;
 		line-height: 40px;
+	}
+
+	.footer-contacts-col ul .responsive {
+		display: block;
 	}
 
 	.footer-form-head {
@@ -170,10 +167,6 @@
 
 @media only screen and (max-width: 660px) {
 
-	.presents-types-box {
-		/*text-align: center;*/
-	}
-
 	.present-type {
 		width: 90%;
 		margin: 0 auto;
@@ -192,7 +185,6 @@
 
 	.exists-present {
 		font-size: 20px;
-		/*float: left;*/
 		padding: 0 30px;
 	}
 
@@ -209,16 +201,13 @@
 
 	.upload-text {
 		float: none;
-		/*margin: -20px auto 0 auto;*/
 		font-size: 16px;
 		line-height: 18px;
 	}
 
 	.chose_file {
 		display: block;
-		/*width: 100%;*/
 		margin: 30px auto;
-		/*text-align: center;*/
 	}
 
 
@@ -240,11 +229,43 @@
 		line-height: 42px;
 	}
 
+	.logo-box {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.logo-box-head {
+		display: none;
+	}
+
 	.tel-contacts-top,
 	.recommendation-img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.tel-contacts-top,
+	.recommendation {
+		width: 100%;
+		text-align: right;
+	}
+
+	.top-num-contacts {
 		display: block;
-		margin: 0 auto;
-		padding: 8% 0;
+		font-size: 18px;
+		line-height: 21px;
+	}
+
+	.recommendation {
+		padding: 1% 0;
+	}
+
+	.recommendation-img {
+		float: none;
+	}
+
+	.promo-box .row {
+		margin: 45px auto 100px auto;
 	}
 
 	.promo-form-contacts {
